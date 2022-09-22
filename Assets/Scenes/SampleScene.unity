@@ -517,3 +517,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whiteStrip: {fileID: 5482220705038116034, guid: e55bd9e97b4cecc4f9bc5b850dc078d4, type: 3}
+  currSpawnTime: 0.5

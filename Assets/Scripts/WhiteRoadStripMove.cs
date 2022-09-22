@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class WhiteRoadStripMove : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public GameObject whiteStrip;
+    public float speed;
+    //public GameObject whiteStrip;
     // Start is called before the first frame update
     void Start()
     {

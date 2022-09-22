@@ -6,22 +6,23 @@ using UnityEngine;
 public class SpawnWhiteStrips : MonoBehaviour
 {
     public GameObject whiteStrip;
-    float currSpawnTime;
+    public float currSpawnTime;
+    private float spawnTime;
     // Start is called before the first frame update
     void Start()
     {
-        currSpawnTime = 5.0f;
+        spawnTime = currSpawnTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currSpawnTime >= 0.0f)
+        if (spawnTime >= 0.0f)
         {
-            currSpawnTime -= Time.deltaTime;
+            spawnTime -= Time.deltaTime;
             return;
         }
-        currSpawnTime = 5.0f;
+        spawnTime = currSpawnTime;
 
         Vector3 location1 = Vector3.zero;
         location1.x =(float) 12.1;
