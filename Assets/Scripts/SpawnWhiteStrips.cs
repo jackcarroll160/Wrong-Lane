@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class SpawnWhiteStrips : MonoBehaviour
@@ -39,13 +41,30 @@ public class SpawnWhiteStrips : MonoBehaviour
         GameObject newWhiteStrip1 = Instantiate(whiteStrip, location1, Quaternion.identity);
         GameObject newWhiteStrip2 = Instantiate(whiteStrip, location2, Quaternion.identity);
         
-        newWhiteStrip1.GetComponentInChildren<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Otherstuff");
-        newWhiteStrip2.GetComponentInChildren<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Otherstuff");
-        //newWhiteStrip.GetComponent<SpriteRenderer>().
-        // newWhiteStrip.GetComponent<SpriteRenderer>().sortingOrder = 2;
-        //newWhiteStrip.GetComponent<SpriteRenderer>().sortingLayerID = 2;
-        //    location.x = transform.position.x;
-        //location.y = Random.Range(bottomLocation, topLocation);
+        newWhiteStrip1.GetComponentInChildren<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("strips");
+        newWhiteStrip2.GetComponentInChildren<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("strips");
+      
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "backWall")
+        {
+            Destroy(collision.gameObject);
+        }
+        //else if (collision.gameObject.tag == "Laser")
+        //{
+        //    GameObject newBoom = Instantiate(explode, transform.position, Quaternion.identity);
+        //    Destroy(newBoom, 0.5f);
+        //    Destroy(collision.gameObject);//Destroys the laser
+        //    sceneManager.SendMessage("AddPoints");
+        //    Destroy(this.gameObject);
+        //}
+    }
+
+
+
+
+
 }

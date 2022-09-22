@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - grassWall
+  - backWall
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
+  - whiteStrips
   - 
-  - 
-  - 
+  - car
   - 
   - 
   - 
@@ -44,6 +46,9 @@ TagManager:
   - name: Background
     uniqueID: 3471518953
     locked: 0
-  - name: Otherstuff
+  - name: strips
     uniqueID: 2559581235
+    locked: 0
+  - name: Otherstuff
+    uniqueID: 2715408889
     locked: 0
