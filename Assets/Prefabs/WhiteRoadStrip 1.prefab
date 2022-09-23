@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 5368225952028641233}
   - component: {fileID: 5368225952028641239}
   - component: {fileID: 2287655628072600019}
+  - component: {fileID: -652447708792585204}
+  - component: {fileID: -2554474606430762019}
   m_Layer: 8
   m_Name: WhiteRoadStrip 1
   m_TagString: Untagged
@@ -157,3 +159,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6860121, y: 0.31398773}
   m_EdgeRadius: 0
+--- !u!114 &-652447708792585204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368225952028641232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030b6e3c68abd034385bd5c9fc6b9334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &-2554474606430762019
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368225952028641232}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
