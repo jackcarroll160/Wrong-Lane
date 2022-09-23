@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class SpawnWhiteStrips : MonoBehaviour
 {
     public GameObject whiteStrip;
-    public float currSpawnTime;
+    public static float currSpawnTime = .5f;
     private float spawnTime;
     // Start is called before the first frame update
     void Start()

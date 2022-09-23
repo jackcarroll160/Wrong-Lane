@@ -26,18 +26,26 @@ public class CarMove : MonoBehaviour
             moveVect *= (moveSpeed * Time.deltaTime);
             transform.Translate(moveVect);
             Debug.Log("Hi, it got here!!!");
+            //if()
+            //SpawnWhiteStrips.currSpawnTime--;
+            //WhiteRoadStripMove.speed--; 
         }
         else
         {
+           // if (Input.GetKey("right")) {
+                inputX = Input.GetAxis("Horizontal");
+                float inputY = Input.GetAxis("Vertical");
+                Vector3 moveVect = new Vector3(inputX, inputY, 0);
+                moveVect *= (moveSpeed * Time.deltaTime);
+                transform.Translate(moveVect);
+                Debug.Log("Hi, it got 2222 HERE!!!");
+                if (WhiteRoadStripMove.speed < 40)
+                {
+                    SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime / 1.001f;
+                    WhiteRoadStripMove.speed = WhiteRoadStripMove.speed * 1.001f;
 
-            inputX = Input.GetAxis("Horizontal");
-            float inputY = Input.GetAxis("Vertical");
-            Vector3 moveVect = new Vector3(inputX, inputY, 0);
-            moveVect *= (moveSpeed * Time.deltaTime);
-            transform.Translate(moveVect);
-            Debug.Log("Hi, it got 2222 HERE!!!");
-
-
+                }
+          //  }
         }
     }
 }
