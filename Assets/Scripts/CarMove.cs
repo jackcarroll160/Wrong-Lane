@@ -22,7 +22,7 @@ public class CarMove : MonoBehaviour
             changeSpot = inputX;
             inputX = Input.GetAxis("Horizontal");
             float inputY = Input.GetAxis("Vertical");  
-            Vector3 moveVect = new Vector3(inputX, inputY, 0);
+            Vector3 moveVect = new Vector3(0, inputY, 0);
             moveVect *= (moveSpeed * Time.deltaTime);
             transform.Translate(moveVect);
             Debug.Log("Hi, it got here!!!");
@@ -31,7 +31,7 @@ public class CarMove : MonoBehaviour
                 SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;
                 WhiteRoadStripMove.speed = WhiteRoadStripMove.speed / 1.001f;
             }
-            else
+            else if(WhiteRoadStripMove.speed < 10)
             {
                 SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime / 1.001f;
                 WhiteRoadStripMove.speed = WhiteRoadStripMove.speed * 1.001f;
@@ -42,9 +42,9 @@ public class CarMove : MonoBehaviour
             if (Input.GetKey("d")) {
                 inputX = Input.GetAxis("Horizontal");
                 float inputY = Input.GetAxis("Vertical");
-                Vector3 moveVect = new Vector3(inputX, inputY, 0);
+                Vector3 moveVect = new Vector3(0, inputY, 0);
                 moveVect *= (moveSpeed * Time.deltaTime);
-                transform.Translate(moveVect);
+               transform.Translate(moveVect);
                 Debug.Log("Hi, it got 2222 HERE!!!");
                 if (WhiteRoadStripMove.speed < 40)
                 {
@@ -57,11 +57,11 @@ public class CarMove : MonoBehaviour
             {
                 inputX = Input.GetAxis("Horizontal");
                 float inputY = Input.GetAxis("Vertical");
-                Vector3 moveVect = new Vector3(inputX, inputY, 0);
+                Vector3 moveVect = new Vector3(0, inputY, 0);
                 moveVect *= (moveSpeed * Time.deltaTime);
                 transform.Translate(moveVect);
                 Debug.Log("Hi, it got 2222 HERE!!!");
-                if (WhiteRoadStripMove.speed < 40)
+                if (WhiteRoadStripMove.speed > 2.5)
                 {
                     SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;
                     WhiteRoadStripMove.speed = WhiteRoadStripMove.speed / 1.001f;
