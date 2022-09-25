@@ -30,11 +30,13 @@ public class CarMove : MonoBehaviour
             {
                 SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;
                 WhiteRoadStripMove.speed = WhiteRoadStripMove.speed / 1.001f;
+                roadBlocksMove.speed = WhiteRoadStripMove.speed;
             }
             else if(WhiteRoadStripMove.speed < 10)
             {
                 SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime / 1.001f;
                 WhiteRoadStripMove.speed = WhiteRoadStripMove.speed * 1.001f;
+                roadBlocksMove.speed = WhiteRoadStripMove.speed;
             }
         }
         else
@@ -50,7 +52,7 @@ public class CarMove : MonoBehaviour
                 {
                     SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime / 1.001f;
                     WhiteRoadStripMove.speed = WhiteRoadStripMove.speed * 1.001f;
-
+                    roadBlocksMove.speed = WhiteRoadStripMove.speed;
                 }
              }
             else
@@ -65,7 +67,7 @@ public class CarMove : MonoBehaviour
                 {
                     SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;
                     WhiteRoadStripMove.speed = WhiteRoadStripMove.speed / 1.001f;
-
+                    roadBlocksMove.speed = WhiteRoadStripMove.speed;
                 }
             }
 
