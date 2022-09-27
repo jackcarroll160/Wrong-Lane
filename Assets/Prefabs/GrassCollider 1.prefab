@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &528989399436847306
+--- !u!1 &3555308249907509301
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5427182205947104907}
-  - component: {fileID: 139329245109940474}
-  - component: {fileID: 1387664173980665283}
+  - component: {fileID: 9029891509657116276}
+  - component: {fileID: 4030537222283862021}
+  - component: {fileID: 2684248992388650300}
   m_Layer: 0
-  m_Name: GrassCollider
-  m_TagString: Untagged
+  m_Name: GrassCollider 1
+  m_TagString: grassWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5427182205947104907
+--- !u!4 &9029891509657116276
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528989399436847306}
+  m_GameObject: {fileID: 3555308249907509301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.30097362, y: 0.24117793, z: -0.04306683}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &139329245109940474
+--- !u!61 &4030537222283862021
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528989399436847306}
+  m_GameObject: {fileID: 3555308249907509301}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -59,13 +59,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.437876, y: 1.8575149}
   m_EdgeRadius: 0
---- !u!61 &1387664173980665283
+--- !u!61 &2684248992388650300
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528989399436847306}
+  m_GameObject: {fileID: 3555308249907509301}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &557919483316214877
+--- !u!1 &1128363056110590538
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,53 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7476196721122698886}
-  - component: {fileID: 6898225830238630790}
+  - component: {fileID: 2870946349550413965}
+  - component: {fileID: 4560052334787585497}
   m_Layer: 0
-  m_Name: BackWallCollider
+  m_Name: ObstacleSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7476196721122698886
+--- !u!4 &2870946349550413965
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557919483316214877}
+  m_GameObject: {fileID: 1128363056110590538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.30097362, y: 0.24117793, z: -0.04306683}
+  m_LocalPosition: {x: 3.2514167, y: 0.58460706, z: -0.07456409}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6898225830238630790
-BoxCollider2D:
+--- !u!114 &4560052334787585497
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557919483316214877}
+  m_GameObject: {fileID: 1128363056110590538}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -11.940895, y: -0.38588142}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8713722, y: 10.003908}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39a366542d55574f9c505004a27c550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  log: {fileID: 5940499668847885257, guid: ca448d5b49c21e042adda4e91d9ff914, type: 3}
+  potHole: {fileID: 5502547158389311398, guid: 75cc503ae5455704aaa6eca24e94eeb1, type: 3}
+  topLocation: 0.7
+  bottomLocation: -1.18
+  randomSeed: 100
+  minSpawnTime: 0.15
+  maxSpawnTime: 7.5

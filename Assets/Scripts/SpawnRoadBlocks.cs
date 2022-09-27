@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnRoadBlocks : MonoBehaviour
 {
     public GameObject log;
+    public GameObject potHole;
     private float spawnTime;
 
     public static float currSpawnTime = .5f;
@@ -14,13 +15,14 @@ public class SpawnRoadBlocks : MonoBehaviour
 
 
     public int randomSeed = 100;
-    public float minSpawnTime = 0.1f;
-    public float maxSpawnTime = 20f;
+    public float minSpawnTime;
+    public float maxSpawnTime;
 
 
     private int num;
 
     private int logNum = 0;
+    private int potHoleNum = 1;
 
 
     // Start is called before the first frame update
@@ -33,11 +35,15 @@ public class SpawnRoadBlocks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log("1");
+        Debug.Log(currSpawnTime);
         if (currSpawnTime >= 0.0f)
         {
             currSpawnTime -= Time.deltaTime;
             return;
         }
+        Debug.Log("2");
         int num = Random.Range(0, 2);
         if (num == logNum)
         {
@@ -47,6 +53,14 @@ public class SpawnRoadBlocks : MonoBehaviour
         location.y = Random.Range(bottomLocation, topLocation);
         GameObject newLog = Instantiate(log, location, Quaternion.identity);
             }
+        else if(num == potHoleNum)
+        {
+            currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+            Vector3 location = Vector3.zero;
+            location.x = transform.position.x;
+            location.y = Random.Range(bottomLocation, topLocation);
+            GameObject newPotHole = Instantiate(potHole, location, Quaternion.identity);
+        }
         //currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
         //Vector3 location = Vector3.zero;
         ////The GO is suppose to be on the right hand side of the screen
