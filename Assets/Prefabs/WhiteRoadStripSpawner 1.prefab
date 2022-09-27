@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8387974121384063947}
   - component: {fileID: 7702289536955736835}
   - component: {fileID: 3590979267908897587}
+  - component: {fileID: 4150883739503378966}
   m_Layer: 8
   m_Name: WhiteRoadStripSpawner 1
   m_TagString: Untagged
@@ -72,3 +73,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whiteStrip: {fileID: 5368225952028641232, guid: 94dcf641c514ba3408ddcc6c87aa508d, type: 3}
+--- !u!114 &4150883739503378966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600308405937282671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d5d9f5942a0cd4fb8eb8f326288b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

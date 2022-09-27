@@ -6,6 +6,7 @@ TagManager:
   tags:
   - grassWall
   - backWall
+  - log
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
   - name: strips
     uniqueID: 2559581235
     locked: 0
-  - name: Otherstuff
+  - name: potHole
     uniqueID: 2715408889
+    locked: 0
+  - name: otherstuff
+    uniqueID: 1321915935
     locked: 0

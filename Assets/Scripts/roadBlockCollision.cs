@@ -27,6 +27,16 @@ public class roadBlockCollision : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        else if(collision.gameObject.tag == "player")
+        {
+            //perform animation
+        }
+
+
+
+
+
+
         //else if (collision.gameObject.tag == "Laser")
         //{
         //    GameObject newBoom = Instantiate(explode, transform.position, Quaternion.identity);
@@ -35,6 +45,11 @@ public class roadBlockCollision : MonoBehaviour
         //    sceneManager.SendMessage("AddPoints");
         //    Destroy(this.gameObject);
         //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
     }
 
 }
