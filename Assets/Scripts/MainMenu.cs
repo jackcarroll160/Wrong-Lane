@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class carDriveSceneManager : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-
-   public float distance;
-   
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +14,13 @@ public class carDriveSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AddDistance();
-        //add button to pause game.
-        //try to stop time or something like that
         
     }
-    void AddDistance()
+
+
+   public void startGame()
     {
-        distance ++;
+        SceneManager.LoadScene(1);
     }
 
 

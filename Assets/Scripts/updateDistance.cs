@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Profiling;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -31,9 +32,22 @@ public class updateDistance : MonoBehaviour
         }
         numFrames++;
 
+        if (i == 500)
+            Pause();
 
 
     }
+
+    void Pause()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+
+
+
+
+
 
 
 
