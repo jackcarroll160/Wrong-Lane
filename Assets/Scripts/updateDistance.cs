@@ -32,17 +32,12 @@ public class updateDistance : MonoBehaviour
         }
         numFrames++;
 
-        if (i == 500)
-            Pause();
+
 
 
     }
 
-    void Pause()
-    {
-        SceneManager.LoadScene(2);
-    }
-
+    
 
 
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpawnRoadBlocks : MonoBehaviour
 {
     public GameObject log;
-    public GameObject potHole;
+    public GameObject boulder;
+    public GameObject carObstacle;
     private float spawnTime;
 
     public static float currSpawnTime = .5f;
@@ -22,7 +23,8 @@ public class SpawnRoadBlocks : MonoBehaviour
     private int num;
 
     private int logNum = 0;
-    private int potHoleNum = 1;
+    private int boulderNum = 1;
+    private int carObstacleNum = 2;
 
 
     // Start is called before the first frame update
@@ -44,7 +46,7 @@ public class SpawnRoadBlocks : MonoBehaviour
             return;
         }
         Debug.Log("2");
-        int num = Random.Range(0, 2);
+        int num = Random.Range(0, 3);
         if (num == logNum)
         {
         currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
@@ -53,14 +55,25 @@ public class SpawnRoadBlocks : MonoBehaviour
         location.y = Random.Range(bottomLocation, topLocation);
         GameObject newLog = Instantiate(log, location, Quaternion.identity);
             }
-        else if(num == potHoleNum)
+        else if(num == boulderNum)
         {
             currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
             Vector3 location = Vector3.zero;
             location.x = transform.position.x;
             location.y = Random.Range(bottomLocation, topLocation);
-            GameObject newPotHole = Instantiate(potHole, location, Quaternion.identity);
+            GameObject newPotHole = Instantiate(boulder, location, Quaternion.identity);
         }
+        else if (num == carObstacleNum)
+        {
+            currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+            Vector3 location = Vector3.zero;
+            location.x = transform.position.x;
+            location.y = Random.Range(bottomLocation, topLocation);
+            GameObject newPotHole = Instantiate(carObstacle, location, Quaternion.identity);
+        }
+
+
+
         //currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
         //Vector3 location = Vector3.zero;
         ////The GO is suppose to be on the right hand side of the screen
