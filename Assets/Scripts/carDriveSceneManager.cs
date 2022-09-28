@@ -17,6 +17,7 @@ public class carDriveSceneManager : MonoBehaviour
     void Update()
     {
         AddDistance();
+        
     }
     void AddDistance()
     {
