@@ -28,5 +28,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void startHomeScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
 }
