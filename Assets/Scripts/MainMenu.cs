@@ -38,5 +38,10 @@ public class MainMenu : MonoBehaviour
         Application.Quit(0);
     }
 
+    public void startCreditScene()
+    {
+        SceneManager.LoadScene(3);
+    }
+
 
 }
