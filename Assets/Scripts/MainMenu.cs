@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public GameObject hScoreUI; 
+   //public static GameObject highScoreUI;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //highScoreUI = hScoreUI;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        hScoreUI.GetComponent<TMPro.TextMeshProUGUI>().text = PlayerPrefs.GetInt("highScore").ToString();
     }
 
 
@@ -42,6 +45,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void highScore()
+    {
+
+    }
+    //public static void updateHighScore()
+   // {
+     //   highScoreUI.GetComponent<TMPro.TextMeshProUGUI>().text = updateDistance.highScore.ToString();
+   // }
 
 
 }

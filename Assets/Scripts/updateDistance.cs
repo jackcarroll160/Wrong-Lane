@@ -11,6 +11,7 @@ public class updateDistance : MonoBehaviour
     public Text txt;
     public bool playing = true;
     public float timeSince;
+    public static int highScore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class updateDistance : MonoBehaviour
     }
 
     // Update is called once per frame
-    private int i = 1;
+    public static int i = 1;
     private int numFrames = 0;
     void Update()
     {
@@ -32,9 +33,9 @@ public class updateDistance : MonoBehaviour
         }
         numFrames++;
 
+        
 
-
-
+        
     }
 
     

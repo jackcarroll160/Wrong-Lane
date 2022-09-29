@@ -94,6 +94,11 @@ public class CarMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "carObstacle")
         {
+            if (updateDistance.i > updateDistance.highScore)
+            {
+                updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+            }
             //play animation and explosion sound
             audio[0].Play();
            // SceneManager.LoadScene(4);
@@ -103,16 +108,34 @@ public class CarMove : MonoBehaviour
         }
         else if (collision.gameObject.tag == "log")
         {
+            if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
+            {
+                //updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+            }
+            //Debug.Log("updateHighScore1");
+           // MainMenu.updateHighScore();
+            //Debug.Log("updateHighScore2");
             //play animation and car spin out sond  
             //SceneManager.LoadScene(4);
         }
         else if (collision.gameObject.tag == "boulder")
         {
+            if (updateDistance.i > updateDistance.highScore)
+            {
+                updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+            }
             //play animation and car crashing sound
             //SceneManager.LoadScene(4);
         }
         else if (collision.gameObject.tag == "grassWall")
         {
+            if (updateDistance.i > updateDistance.highScore)
+            {
+                updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+            }
             // animation and tire deflate sound
 
             audio[1].Play();
