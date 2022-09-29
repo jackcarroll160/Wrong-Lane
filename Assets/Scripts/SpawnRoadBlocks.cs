@@ -15,7 +15,7 @@ public class SpawnRoadBlocks : MonoBehaviour
     public float bottomLocation;
 
 
-    public int randomSeed = 100;
+    public int randomSeed;
     public float minSpawnTime;
     public float maxSpawnTime;
 
@@ -59,7 +59,7 @@ public class SpawnRoadBlocks : MonoBehaviour
         {
             currSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
             Vector3 location = Vector3.zero;
-            location.x = transform.position.x;
+            location.x = 15;
             location.y = Random.Range(bottomLocation, topLocation);
             GameObject newPotHole = Instantiate(boulder, location, Quaternion.identity);
         }

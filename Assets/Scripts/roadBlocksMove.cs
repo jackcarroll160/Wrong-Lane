@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class roadBlocksMove : MonoBehaviour
 {
-    public static float speed = 10;
+    public float speed;
     //public GameObject whiteStrip;
     // Start is called before the first frame update
     void Start()

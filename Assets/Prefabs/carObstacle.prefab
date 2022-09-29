@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2901864448207010715}
   - component: {fileID: 1262919685450557920}
   - component: {fileID: 4329260605393240559}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: carObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068475681877659326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0583627, y: 0.08683738, z: -10.04518}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.62091, y: 0.082036, z: -10.04518}
+  m_LocalScale: {x: 0.5866491, y: 0.9447483, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7247370291410961112}
@@ -49,7 +49,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8257589, y: 1.7581387}
+  m_Offset: {x: -1.2510992, y: 1.357938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -60,7 +60,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86475897, y: 0.6618961}
+  m_Size: {x: 2.0618284, y: 1.1287963}
   m_EdgeRadius: 0
 --- !u!50 &2901864448207010715
 Rigidbody2D:
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12509239961a92243a6fe99c0561756d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
 --- !u!114 &4329260605393240559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7247370291410961112}
   - component: {fileID: 1243986666378255565}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: trash car lul (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

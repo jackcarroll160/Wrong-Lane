@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4592167462566648876}
   - component: {fileID: 8770752429167235617}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: 2D Game CSCE 552
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: -7835569427392304300}
   - component: {fileID: 3862105255036902761}
   - component: {fileID: 8460619342013343944}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Log
   m_TagString: log
   m_Icon: {fileID: 0}
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12509239961a92243a6fe99c0561756d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!114 &-7835569427392304300
 MonoBehaviour:
   m_ObjectHideFlags: 0
