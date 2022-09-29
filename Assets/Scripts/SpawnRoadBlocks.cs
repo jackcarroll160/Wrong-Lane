@@ -69,7 +69,8 @@ public class SpawnRoadBlocks : MonoBehaviour
             Vector3 location = Vector3.zero;
             location.x = transform.position.x;
             location.y = Random.Range(bottomLocation, topLocation);
-            GameObject newPotHole = Instantiate(carObstacle, location, Quaternion.identity);
+            GameObject newCarObstacle = Instantiate(carObstacle, location, Quaternion.identity);
+            //newCarObstacle.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 500);
         }
 
 
