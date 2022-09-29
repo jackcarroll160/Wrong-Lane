@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5314793739071378894}
   m_Layer: 12
   m_Name: boulder
-  m_TagString: Untagged
+  m_TagString: boulder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

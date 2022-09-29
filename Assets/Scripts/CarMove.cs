@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class CarMove : MonoBehaviour
 {
     public float moveSpeed = 5.0f;
@@ -87,4 +89,47 @@ public class CarMove : MonoBehaviour
 
         }
     }
+    public AudioSource[] audio = new AudioSource[2];
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "carObstacle")
+        {
+            //play animation and explosion sound
+            audio[0].Play();
+           // SceneManager.LoadScene(4);
+
+
+            
+        }
+        else if (collision.gameObject.tag == "log")
+        {
+            //play animation and car spin out sond  
+            //SceneManager.LoadScene(4);
+        }
+        else if (collision.gameObject.tag == "boulder")
+        {
+            //play animation and car crashing sound
+            //SceneManager.LoadScene(4);
+        }
+        else if (collision.gameObject.tag == "grassWall")
+        {
+            // animation and tire deflate sound
+
+            audio[1].Play();
+            //SceneManager.LoadScene(4);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

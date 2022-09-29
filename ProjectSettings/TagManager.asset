@@ -8,6 +8,8 @@ TagManager:
   - backWall
   - log
   - distance
+  - carObstacle
+  - boulder
   layers:
   - Default
   - TransparentFX
