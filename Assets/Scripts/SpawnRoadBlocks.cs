@@ -30,7 +30,7 @@ public class SpawnRoadBlocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Random.InitState(randomSeed);
+        Random.InitState(Random.Range(0,100000));
         currSpawnTime = maxSpawnTime;
     }
 
