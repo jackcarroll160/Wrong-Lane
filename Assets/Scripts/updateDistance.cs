@@ -11,7 +11,7 @@ public class updateDistance : MonoBehaviour
     public Text txt;
     public bool playing = true;
     public float timeSince;
-    public static int highScore = 0;
+    public static int highScore;
     // Start is called before the first frame update
     void Start()
     {

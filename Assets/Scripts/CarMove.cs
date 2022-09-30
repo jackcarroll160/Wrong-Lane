@@ -96,12 +96,13 @@ public class CarMove : MonoBehaviour
         {
             if (updateDistance.i > updateDistance.highScore)
             {
-                updateDistance.highScore = updateDistance.i;
-                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+                //updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.i);
+                updateDistance.i = 1;
             }
             //play animation and explosion sound
             audio[0].Play();
-           // SceneManager.LoadScene(4);
+           SceneManager.LoadScene(4);
 
 
             
