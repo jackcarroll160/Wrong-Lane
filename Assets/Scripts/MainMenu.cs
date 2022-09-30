@@ -45,10 +45,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
-    public void highScore()
-    {
-
-    }
+    
     //public static void updateHighScore()
    // {
      //   highScoreUI.GetComponent<TMPro.TextMeshProUGUI>().text = updateDistance.highScore.ToString();

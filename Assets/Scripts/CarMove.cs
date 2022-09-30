@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -111,6 +112,8 @@ public class CarMove : MonoBehaviour
         
         if (collision.gameObject.tag == "carObstacle")
         {
+            this.gameObject.layer = 14;
+            GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
             StartCoroutine(soundClipThenLoad(0, 4));
             
@@ -129,6 +132,8 @@ public class CarMove : MonoBehaviour
         }
         else if (collision.gameObject.tag == "log")
         {
+            this.gameObject.layer = 14;
+            GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
             StartCoroutine(soundClipThenLoad(0, 4));
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
@@ -141,6 +146,8 @@ public class CarMove : MonoBehaviour
         }
         else if (collision.gameObject.tag == "boulder")
         {
+            this.gameObject.layer = 14;
+            GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
             StartCoroutine(soundClipThenLoad(0, 4));
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
@@ -153,6 +160,8 @@ public class CarMove : MonoBehaviour
         }
         else if (collision.gameObject.tag == "grassWall")
         {
+            this.gameObject.layer = 14;
+            GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
             StartCoroutine(soundClipThenLoad(1, 4));
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
