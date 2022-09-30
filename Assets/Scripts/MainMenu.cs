@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hScoreUI.GetComponent<TMPro.TextMeshProUGUI>().text = PlayerPrefs.GetInt("highScore").ToString();
+        hScoreUI.GetComponent<TMPro.TextMeshProUGUI>().text = (PlayerPrefs.GetInt("highScore")-1).ToString();
     }
 
 

@@ -12,6 +12,8 @@ public class CarMove : MonoBehaviour
     void Start()
     {
         changeSpot = Input.GetAxis("Horizontal");
+        updateDistance.i = 1;
+        updateDistance.check = true;
     }
     // Update is called once per frame
     void Update()
@@ -90,56 +92,78 @@ public class CarMove : MonoBehaviour
         }
     }
     public AudioSource[] audio = new AudioSource[2];
+   public IEnumerator soundClipThenLoad(int sound, int scene)
+    {
+        
+        audio[sound].Play();
+
+        yield return new WaitForSeconds(1.4f);
+       
+        SceneManager.LoadScene(scene);
+        
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        
+
+        
         if (collision.gameObject.tag == "carObstacle")
         {
-            if (updateDistance.i > updateDistance.highScore)
-            {
-                //updateDistance.highScore = updateDistance.i;
-                PlayerPrefs.SetInt("highScore", updateDistance.i);
-                updateDistance.i = 1;
-            }
-            //play animation and explosion sound
-            audio[0].Play();
-           SceneManager.LoadScene(4);
-
-
+            updateDistance.check = false;
+            StartCoroutine(soundClipThenLoad(0, 4));
             
-        }
-        else if (collision.gameObject.tag == "log")
-        {
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
             {
                 //updateDistance.highScore = updateDistance.i;
-                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+                PlayerPrefs.SetInt("highScore", updateDistance.i);
+                //updateDistance.i = 1;
             }
-            //Debug.Log("updateHighScore1");
-           // MainMenu.updateHighScore();
-            //Debug.Log("updateHighScore2");
-            //play animation and car spin out sond  
-            //SceneManager.LoadScene(4);
+
+            
+            
+            
+
+
+        }
+        else if (collision.gameObject.tag == "log")
+        {
+            updateDistance.check = false;
+            StartCoroutine(soundClipThenLoad(0, 4));
+            if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
+            {
+                //updateDistance.highScore = updateDistance.i;
+                PlayerPrefs.SetInt("highScore", updateDistance.i);
+                //updateDistance.i = 1;
+            }
+            
         }
         else if (collision.gameObject.tag == "boulder")
         {
-            if (updateDistance.i > updateDistance.highScore)
+            updateDistance.check = false;
+            StartCoroutine(soundClipThenLoad(0, 4));
+            if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
             {
-                updateDistance.highScore = updateDistance.i;
-                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+                
+                PlayerPrefs.SetInt("highScore", updateDistance.i);
+              //  updateDistance.i = 1;
             }
-            //play animation and car crashing sound
-            //SceneManager.LoadScene(4);
+            
         }
         else if (collision.gameObject.tag == "grassWall")
         {
-            if (updateDistance.i > updateDistance.highScore)
+            updateDistance.check = false;
+            StartCoroutine(soundClipThenLoad(1, 4));
+            if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
             {
-                updateDistance.highScore = updateDistance.i;
-                PlayerPrefs.SetInt("highScore", updateDistance.highScore);
+                
+                PlayerPrefs.SetInt("highScore", updateDistance.i);
+              //  updateDistance.i = 1;
             }
             // animation and tire deflate sound
-
-            audio[1].Play();
+            
+            
             //SceneManager.LoadScene(4);
         }
     }

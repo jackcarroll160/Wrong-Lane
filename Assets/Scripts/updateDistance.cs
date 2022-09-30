@@ -20,11 +20,12 @@ public class updateDistance : MonoBehaviour
 
     // Update is called once per frame
     public static int i = 1;
+    public static bool check = true;
     private int numFrames = 0;
     void Update()
     {
         
-        if(numFrames == 11)
+        if(numFrames == 11 && check)
         {
             GetComponent<TMPro.TextMeshProUGUI>().text = i.ToString();
             i++;
