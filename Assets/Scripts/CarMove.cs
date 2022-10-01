@@ -92,7 +92,7 @@ public class CarMove : MonoBehaviour
 
         }
     }
-    public AudioSource[] audio = new AudioSource[2];
+    public AudioSource[] audio = new AudioSource[5];
    public IEnumerator soundClipThenLoad(int sound, int scene)
     {
         
@@ -135,7 +135,7 @@ public class CarMove : MonoBehaviour
             this.gameObject.layer = 14;
             GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
-            StartCoroutine(soundClipThenLoad(0, 4));
+            StartCoroutine(soundClipThenLoad(2, 4));
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
             {
                 //updateDistance.highScore = updateDistance.i;
@@ -149,7 +149,7 @@ public class CarMove : MonoBehaviour
             this.gameObject.layer = 14;
             GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
-            StartCoroutine(soundClipThenLoad(0, 4));
+            StartCoroutine(soundClipThenLoad(3, 4));
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
             {
                 
