@@ -27,8 +27,10 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         AudioSource[] sounds = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource s in sounds)
-            s.Play();
+        //foreach (AudioSource s in sounds)
+
+        sounds[0].Play();
+        sounds[6].Play();
 
         GameObject d = GameObject.FindWithTag("distance");
         d.GetComponent<updateDistance>().enabled = true;
@@ -55,6 +57,14 @@ public class PauseMenu : MonoBehaviour
     public void loadMenu() 
     {
         Time.timeScale = 1f;
+        //AudioSource[] sounds = FindObjectsOfType<AudioSource>();
+        //foreach (AudioSource s in sounds)
+
+        // sounds[2].Play();
+        //sounds[6].Play();
+        //GameObject d = GameObject.FindWithTag("distance");
+        //d.GetComponent<updateDistance>().enabled = true;
+        GameIsPaused = false;
         SceneManager.LoadScene(0);
     }
 

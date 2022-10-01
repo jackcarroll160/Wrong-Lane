@@ -9,6 +9,7 @@ public class CarMove : MonoBehaviour
     public float moveSpeed = 5.0f;
     private float changeSpot;
     private float inputX;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -97,6 +98,7 @@ public class CarMove : MonoBehaviour
     {
         
         audio[sound].Play();
+        //audio[sound].Play();
 
         yield return new WaitForSeconds(1.4f);
        
@@ -115,6 +117,7 @@ public class CarMove : MonoBehaviour
             this.gameObject.layer = 14;
             GetComponent<Rigidbody2D>().AddTorque(150);
             updateDistance.check = false;
+            //GameObject newExplosion = Instantiate(explosion, new Vector3(this.transform.position.x, this.transform.position.y, -10 ) , Quaternion.identity);
             StartCoroutine(soundClipThenLoad(0, 4));
             
             if (updateDistance.i > PlayerPrefs.GetInt("highScore"))
