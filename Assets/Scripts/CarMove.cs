@@ -29,7 +29,7 @@ public class CarMove : MonoBehaviour
             Vector3 moveVect = new Vector3(inputX, inputY, 0);
             moveVect *= (moveSpeed * Time.deltaTime);
             transform.Translate(moveVect);
-            Debug.Log("Hi, it got here!!!");
+            
             //if (WhiteRoadStripMove.speed > 10)
             //{
             //    SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;
@@ -60,7 +60,7 @@ public class CarMove : MonoBehaviour
 
                 moveVect *= (moveSpeed * Time.deltaTime);
                 transform.Translate(moveVect);
-                Debug.Log("Hi, it got 2222 HERE!!!");
+               
                 //if (WhiteRoadStripMove.speed < 40)
                 //{
                 //    SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime / 1.001f;
@@ -75,7 +75,7 @@ public class CarMove : MonoBehaviour
                 Vector3 moveVect = new Vector3(inputX, inputY, 0);
                 moveVect *= (moveSpeed * Time.deltaTime);
                 transform.Translate(moveVect);
-                Debug.Log("Hi, it got 2222 HERE!!!");
+                
                 //if (WhiteRoadStripMove.speed < 40)
                 //{
                 //    SpawnWhiteStrips.currSpawnTime = SpawnWhiteStrips.currSpawnTime * 1.001f;

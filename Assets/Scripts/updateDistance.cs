@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Profiling;
+//using UnityEditor.Profiling;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class updateDistance : MonoBehaviour
 {
-    public Text txt;
+    //public Text txt;
     public bool playing = true;
     public float timeSince;
     public static int highScore;

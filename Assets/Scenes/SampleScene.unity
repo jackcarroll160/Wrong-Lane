@@ -2760,7 +2760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd421436e18369498f3d97be050a7f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt: {fileID: 0}
   playing: 1
   timeSince: 1
 --- !u!114 &1639504728
@@ -3532,5 +3531,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 347762071686978538, guid: f8027cf5696a13e429173cab5ced81ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f8027cf5696a13e429173cab5ced81ed, type: 3}

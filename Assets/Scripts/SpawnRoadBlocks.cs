@@ -38,14 +38,13 @@ public class SpawnRoadBlocks : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("1");
-        Debug.Log(currSpawnTime);
+       
         if (currSpawnTime >= 0.0f)
         {
             currSpawnTime -= Time.deltaTime;
             return;
         }
-        Debug.Log("2");
+        
         int num = Random.Range(0, 3);
         if (num == logNum)
         {

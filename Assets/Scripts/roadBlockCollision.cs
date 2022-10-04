@@ -13,12 +13,12 @@ public class roadBlockCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject logs = GameObject.FindGameObjectWithTag("log");
+        //GameObject logs = GameObject.FindGameObjectWithTag("log");
        
-        Collider2D thisCollider = GetComponent<Collider2D>();
-        Collider2D[] borderColliders = logs.GetComponents<Collider2D>();
-        foreach (Collider2D c in borderColliders)
-            Physics2D.IgnoreCollision(thisCollider, c);
+        //Collider2D thisCollider = GetComponent<Collider2D>();
+        //Collider2D[] borderColliders = logs.GetComponents<Collider2D>();
+        //foreach (Collider2D c in borderColliders)
+        //    Physics2D.IgnoreCollision(thisCollider, c);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
