@@ -293,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1100, y: 518}
+  m_AnchoredPosition: {x: -0.00082016, y: 0.0204}
+  m_SizeDelta: {x: 1919.4, y: 1080.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698009704
 MonoBehaviour:
@@ -513,7 +513,7 @@ RectTransform:
   m_GameObject: {fileID: 1835894487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.675, y: 1.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2020283979}
@@ -657,7 +657,7 @@ RectTransform:
   m_GameObject: {fileID: 2009550720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.821906, y: 2.7407188, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 531419489}
@@ -666,7 +666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -164}
+  m_AnchoredPosition: {x: 0, y: -248}
   m_SizeDelta: {x: 228.1736, y: 54.3477}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2009550722
@@ -812,12 +812,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -832,8 +832,8 @@ Canvas:
   m_GameObject: {fileID: 2020283975}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1131184206}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -879,3 +879,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e8c5f8da17ec649b8cd710a2e444f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hScoreUI: {fileID: 0}

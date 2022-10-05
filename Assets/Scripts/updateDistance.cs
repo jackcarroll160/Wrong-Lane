@@ -25,7 +25,7 @@ public class updateDistance : MonoBehaviour
     void Update()
     {
         
-        if(numFrames == 11 && check)
+        if(numFrames == 3 && check)
         {
             GetComponent<TMPro.TextMeshProUGUI>().text = i.ToString();
             i++;
