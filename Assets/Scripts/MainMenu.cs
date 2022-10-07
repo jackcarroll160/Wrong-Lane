@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public GameObject hScoreUI; 
+    public GameObject hScoreUI;
+    //public static bool start = true;
    //public static GameObject highScoreUI;
     // Start is called before the first frame update
     void Start()
     {
-        //highScoreUI = hScoreUI;
+        //if(start == true)
+        //PlayerPrefs.SetInt("highScore", 1);
+        //start = false;
+        //PlayerPrefs.SetInt("highScore", 1);
     }
 
     // Update is called once per frame
