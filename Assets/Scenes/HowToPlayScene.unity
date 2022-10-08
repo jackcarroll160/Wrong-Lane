@@ -714,7 +714,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2020283980}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: howToPlay, Assembly-CSharp
         m_MethodName: startHomeScreen
         m_Mode: 1
         m_Arguments:
@@ -876,7 +876,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020283975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e8c5f8da17ec649b8cd710a2e444f2, type: 3}
+  m_Script: {fileID: 11500000, guid: f731f2f113f71ef48ac93ecf5f2b20ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hScoreUI: {fileID: 0}
